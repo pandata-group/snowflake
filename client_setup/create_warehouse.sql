@@ -32,6 +32,3 @@
     MIN_CLUSTER_COUNT = 1
     MAX_CLUSTER_COUNT = 8
     INITIALLY_SUSPENDED = TRUE;
-
--- Drop default warehouse
-    DROP WAREHOUSE COMPUTE_WH;
