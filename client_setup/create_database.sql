@@ -1,0 +1,7 @@
+-- Creates standardized databases for new client environments
+    CREATE DATABASE STAGE_DB;
+    CREATE DATABASE STAGE_DB_DEV;
+    CREATE DATABASE ETL_DB;
+    CREATE DATABASE ETL_DB_DEV;
+    CREATE DATABASE EDW_DB;
+    CREATE DATABASE EDW_DB_DEV;

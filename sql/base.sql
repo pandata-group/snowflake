@@ -1,1 +1,2 @@
-select * from TREVER_TEST_DB.PRODUCTS.SWEATSUITS;
+-- test
+select CURRENT_DATE()
