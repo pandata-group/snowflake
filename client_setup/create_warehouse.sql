@@ -23,7 +23,7 @@
     INITIALLY_SUSPENDED = TRUE;
 
 -- Creates  x-large warehouse
-    CREATE OR REPLACE WAREHOUSE recommended_xlarge_warehouse
+    CREATE OR REPLACE WAREHOUSE WH_XLG
     WAREHOUSE_SIZE = 'XLARGE'
     WAREHOUSE_TYPE = 'STANDARD'
     AUTO_SUSPEND = 300
