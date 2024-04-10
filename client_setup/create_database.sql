@@ -1,4 +1,5 @@
 -- Creates standardized databases for new client environments
+    USE WAREHOUSE COMPUTE_WH;
     CREATE DATABASE STAGE_DB;
     CREATE DATABASE STAGE_DB_DEV;
     CREATE DATABASE ETL_DB;
