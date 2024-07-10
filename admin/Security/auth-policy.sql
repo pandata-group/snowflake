@@ -1,3 +1,5 @@
+-- Policies located under SECURITY.POLICIES database and schema in Snowflake
+
 -- Policy to only accept SSO login + Require MFA
 CREATE OR REPLACE AUTHENTICATION POLICY user_auth_policy
   AUTHENTICATION_METHODS = ('SAML') -- 'PASSWORD'
