@@ -1,6 +1,6 @@
 # Boilerplates | Scripts | Automation | Documentation
 
-## A source of truth for admins and developers at Pandata Group. 
+## A source of truth for admins and developers at Pandata Group
 
 This repository is useful for both reference and implementation of internal and client facing applications. It should serve as primary documentation on best practices and a glimpse of useful implementations.
 
