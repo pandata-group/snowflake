@@ -10,5 +10,4 @@ This repository is useful for both reference and implementation of internal and 
 * Helpful for setting up various integrations in/with Snowflake
 
 > [!NOTE]  
-> Robustness and thoroughness may vary as admins and developers capacity changes. 
-> Projects may be refined or expanded on in practice but not in documentation, we try.
+> Robustness and thoroughness may vary as admins and developers capacity changes. Projects may be refined or expanded on in practice but not in documentation, we try.
