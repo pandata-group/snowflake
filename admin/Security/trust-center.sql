@@ -9,3 +9,7 @@ GRANT APPLICATION ROLE SNOWFLAKE.TRUST_CENTER_VIEWER TO ROLE trust_center_viewer
 -- Grant Roles
 GRANT ROLE trust_center_admin_role TO USER <admin_user>;
 GRANT ROLE trust_center_viewer_role TO USER <viewer_user>;
+
+
+-- Don't flag service accounts for MFA
+ALTER USER <username> SET TYPE = SERVICE;
