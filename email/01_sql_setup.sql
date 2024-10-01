@@ -1,4 +1,4 @@
--- Setup Email Integration Service:
+-- Create Email Integration Service:
 CREATE OR REPLACE NOTIFICATION INTEGRATION EMAIL_INT
   TYPE = EMAIL
   ENABLED = TRUE
@@ -9,14 +9,14 @@ CREATE OR REPLACE NOTIFICATION INTEGRATION EMAIL_INT
 -- ALLOWED_RECIPIENTS needs to be an email of a user in the Snowflake instance
 -- Can create a 'dummy' user with email attached to it's profile to send to if not tied to a users account already
 
--- Setup Stage if needed
+-- Create Stage if needed
 CREATE SCHEMA <DATABASE>.<SCHEMA>;
 CREATE OR REPLACE STAGE <DATABASE>.<SCHEMA>.<STAGE> ENCRYPTION = (TYPE = 'SNOWFLAKE_SSE');
 
 -- Show Stages for confirmation
 SHOW STAGES;
 
---Set Stored Procedure for it
+-- Create Stored Procedure for it
 CREATE OR REPLACE PROCEDURE <DATABASE>.<SCHEMA>.SEND_REPORT_EMAIL()
   RETURNS STRING
   LANGUAGE PYTHON
