@@ -1,6 +1,6 @@
 -- Policy to only accept SSO login - MFA Requirement disabled as we require MFA from Azure for SSO
 CREATE OR REPLACE AUTHENTICATION POLICY user_auth_policy
-  AUTHENTICATION_METHODS = ('SAML') -- 'PASSWORD'
+  AUTHENTICATION_METHODS = ('SAML', 'KEYPAIR') -- 'PASSWORD'
   CLIENT_TYPES = ('SNOWFLAKE_UI', 'SNOWSQL', 'DRIVERS')
   MFA_AUTHENTICATION_METHODS = ('SAML'); -- 'PASSWORD'
   --MFA_ENROLLMENT = REQUIRED; -- Disable if using SSO/SCIM with MFA
