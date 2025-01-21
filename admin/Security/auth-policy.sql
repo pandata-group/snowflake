@@ -49,3 +49,13 @@ FROM TABLE(
       POLICY_NAME => 'SECURITY.POLICIES.SERVICE_AUTH_POLICY'
   )
 );
+
+-- Show users who will be affected by Snowflakes April 2025 MFA Requirements
+SELECT name, type, disabled, has_mfa, has_password
+FROM snowflake.account_usage.users
+WHERE deleted_on IS NULL
+  AND has_mfa = false
+  AND has_password
+  AND (type IS NULL OR type IN ('PERSON', 'LEGACY_SERVICE'))
+  AND disabled = 'false' -- optional: adjust for use case
+ORDER BY NAME ASC;
